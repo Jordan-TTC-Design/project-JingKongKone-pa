@@ -1,62 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title><%- title %></title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
-    <link rel="stylesheet" href="./assets/style/all.css">
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title><%- title %></title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+  <link rel="stylesheet" href="./assets/style/all.css">
+</head>
 
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              Dropdown
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-          </li>
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="row">
+        <div class="col-3">
+          <h1><a href="#"><img src="assets/img/JingKongKone-logo-row-color.svg" alt="金剛宮logo"></a></h1>
+        </div>
+        <div class="col-9">
+          <ul class="header__nav d-flex justify-content-between">
+            <li class="nav__items"><a href="#">相關報導</a></li>
+            <li class="nav__items"><a href="#">關於本宮</a></li>
+            <li class="nav__items"><a href="#">最新公告</a></li>
+            <li class="nav__items"><a href="#">交通&開放時間</a></li>
+            <li class="nav__items"><a href="#">我要點燈</a></li>
+            <li class="nav__items"><a href="#">神佛介紹</a></li>
+            <li class="nav__items"><a href="#">聯絡我們</a></li>
+          </ul>
+        </div>
       </div>
-    </nav>
+    </div>
+  </header>
 
-    <%- contents %>
+  <%- contents %>
 
-    <footer class="footer">
-      footer
-    </footer>
+  <footer class="footer">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-5">
+          <div class="footer__logoBox">
+            <a href="#"><img src="assets/img/JingKongKone-logo-row-black.svg" alt="金剛宮footer__logo"></a>
+            <ul class="footer__infoList">
+              <li class="list__items">
+                <p class="list__items__title">地址</p>
+                <p class="list__items__txt">新北市石門區崁子腳路41之3號</p>
+              </li>
+              <li class="list__items">
+                <p class="list__items__title">電話</p>
+                <p class="list__items__txt">02 2638 2076</p>
+              </li>
+              <li class="list__items">
+                <p class="list__items__title">開放時間</p>
+                <p class="list__items__txt">每日早上 8 點 -下午 5 點</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-7">
+          <div class="footer__navBox">
+            <ul class="footer__nav d-flex">
+              <li class="nav__items"><a href="#">相關報導</a></li>
+              <li class="nav__items"><a href="#">關於本宮</a></li>
+              <li class="nav__items"><a href="#">最新公告</a></li>
+              <li class="nav__items"><a href="#">交通&開放時間</a></li>
+              <li class="nav__items"><a href="#">我要點燈</a></li>
+              <li class="nav__items"><a href="#">神佛介紹</a></li>
+              <li class="nav__items"><a href="#">聯絡我們</a></li>
+            </ul>
+            <div class="d-flex justify-content-between">
+              <p class="copy-right"></p>
+              <p>即刻追蹤了解更多<a href="#"><img src="" alt=""></a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
 
-    <script src="./assets/js/vendors.js"></script>
-    <script src="./assets/js/all.js"></script>
-  </body>
+  <script src="./assets/js/vendors.js"></script>
+  <script src="./assets/js/all.js"></script>
+</body>
 
 </html>
