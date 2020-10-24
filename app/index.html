@@ -4,11 +4,15 @@ layout: ./app/layout.ejs
 engine: ejs
 current: index
 ---
-<section class="home__banner">
+<section class="home__banner position-relative mb-10">
+  <div class=" bg-light-gray h-50 w-100 position-absolute"></div>
   <div class="container-fluid">
     <div class="row">
+      <div class="col-1">
+
+      </div>
       <div class="col-11">
-        <div class="home__banner__box">
+        <div class="home__banner__box d-flex justify-content-center align-items-center flex-column">
           <h2 class="home__banner__title">石門金剛宮</h2>
           <h5>台灣最北端宗教博物館</h5>
         </div>
@@ -16,132 +20,136 @@ current: index
     </div>
   </div>
 </section>
-<section class="home__report">
-  <div class="container">
-    <div class="row">
-      <div class="col-5">
-        <h2 class="section__title color-dark">相關報導</h2>
-        <p>
+<section class="home__report mb-10">
+  <div class="container ">
+    <div class="row d-flex justify-content-center">
+      <div class="col-6">
+        <h2 class="section__title text-center mb-6">相關報導</h2>
+        <p class="mb-6">
           金剛宮是北台灣宮廟規模數一數二的佛道教聖地，宮內的藏寶光明樓還有一大特點，那就是殊聖無比的世界第一大臥佛，位於一樓殿內的臥佛身長59.8台尺，規模之大令人讚嘆不已，慈眉善目的佛像全身金光閃閃，顯得富貴莊嚴、宏偉與慈悲兼具，是到金剛宮不得不探訪的重點之一
         </p>
       </div>
     </div>
-    <div class="row">
-      <div class="col-6">
-        <iframe class="report__video" width="" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY">
-        </iframe>
+  </div>
+  <div class="container-fluid position-relative">
+    <div class="container">
+      <div class="row ">
+        <div class="col-6">
+          <iframe class="report__video" width="100%" height="315" src="https://www.youtube.com/watch?v=7nu4de8XfpY">
+          </iframe>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-6">
-        <div class="report__video__txtbox">
-          <h4 class="txtbox__title">電視台訪問</h4>
+    <div class="row d-flex justify-content-end">
+      <div class="col-md-6">
+        <div class="report__video__txtbox p-9 position-absolute">
+          <h5 class="txtbox__title">電視台訪問</h5>
           <p>
             金剛宮是北台灣宮廟規模數一數二的佛道教聖地，宮內的藏寶光明樓還有一大特點，那就是殊聖無比的世界第一大臥佛，位於一樓殿內的臥佛身長59.8台尺，規模之大令人讚嘆不已，慈眉善目的佛像全身金光閃閃，顯得富貴莊嚴、宏偉與慈悲兼具，是到金剛宮不得不探訪的重點之一
           </p>
         </div>
       </div>
+
+    </div>
+    <div class="row ">
+      <div class="col-md-4"></div>
+      <div class="col-md-8">
+        <div class="bg-light-gray p-5"></div>
+      </div>
     </div>
   </div>
-  <div class="container">
-    <div class="bg-yellow"></div>
-  </div>
+
+
 </section>
-<section class="home__aboutUs">
-  <div class="container-fluid">
+<section class="home__aboutUs ">
+  <div class="container-fluid position-relative">
     <div class="row">
-      <div class="col-6">
-        <h2 class="section__title">關於我們</h2>
-        <p class="section__subTxt"></p>
-      </div>
-    </div>
-  </div>
-  <div class="container">
-    <div class="row">
-      <div class="col-6">
-        <p>金剛宮創立於民國七十五年 ( 西元1986年 ) 是以提倡社教功能，興辦各公益活動，關懷與愛心扶助弱勢團體，純淨宗教文化，發揮神佛博大精深，普愛世人之精神為宗旨。
-          金剛宮以四面佛為主祀，解決善信現世之業障祁願，同時普納儒釋道三教，萬神匯光、千佛自在、廣陳供養以淨化人心，建立「以佛治心、以道淨意、以儒戒行」的新宗教觀，不惟敬祀於天神，也順奉於父母，不惟專修於宗敎聖典，也不怠於人事族群，
-          此即為石門金剛宮出世入世兼具創宮主旨精神。
-          金剛宮創立於民國七十五年 ( 西元1986年 ) 是以提倡社教功能，興辦各公益活動，關懷與愛心扶助弱勢團體，純淨宗教文化，發揮神佛博大精深，普愛世人之精神為宗旨。
-          金剛宮以四面佛為主祀，解決善信現世之業障祁願，同時普納儒釋道三教，萬神匯光、千佛自在、廣陳供養以淨化人心，建立「以佛治心、以道淨意、以儒戒行」的新宗教觀，不惟敬祀於天神，也順奉於父母，不惟專修於宗敎聖典，也不怠於人事族群，此即為石門金剛宮出世入世兼具創宮主旨精神。
-        </p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-9">
-        <div class="aboutUs__imgBox">
-          <div class="d-flex">
-          </div>
-          <div class="d-flex"></div>
+      <div class="col-12">
+        <div class="bg--cover py-14 mb-9 banner">
+          <h2 class="section__title text-center">About關於我們</h2>
+          <p class="section__subTxt text-center">石門金剛宮的起源</p>
         </div>
       </div>
-      <div class="col-3">
-        <h3 class="section__title">山巒水秀</h3>
+    </div>
+    <div class="container">
+      <div class="row d-flex justify-content-center">
+        <div class="col-6 ">
+          <div class="mb-9">
+            <p>金剛宮創立於民國七十五年 ( 西元1986年 ) 是以提倡社教功能，興辦各公益活動，關懷與愛心扶助弱勢團體，純淨宗教文化，發揮神佛博大精深，普愛世人之精神為宗旨。
+              金剛宮以四面佛為主祀，解決善信現世之業障祁願，同時普納儒釋道三教，萬神匯光、千佛自在、廣陳供養以淨化人心，建立「以佛治心、以道淨意、以儒戒行」的新宗教觀，不惟敬祀於天神，也順奉於父母，不惟專修於宗敎聖典，也不怠於人事族群，
+              此即為石門金剛宮出世入世兼具創宮主旨精神。
+              金剛宮創立於民國七十五年 ( 西元1986年 ) 是以提倡社教功能，興辦各公益活動，關懷與愛心扶助弱勢團體，純淨宗教文化，發揮神佛博大精深，普愛世人之精神為宗旨。
+              金剛宮以四面佛為主祀，解決善信現世之業障祁願，同時普納儒釋道三教，萬神匯光、千佛自在、廣陳供養以淨化人心，建立「以佛治心、以道淨意、以儒戒行」的新宗教觀，不惟敬祀於天神，也順奉於父母，不惟專修於宗敎聖典，也不怠於人事族群，此即為石門金剛宮出世入世兼具創宮主旨精神。
+            </p>
+          </div>
+        </div>
       </div>
+      <div class="row">
+        <div class="col-9">
+          <div class="aboutUs__imgBox w-100 d-flex flex-column justify-content-between">
+            <div class="row h--half-space">
+              <div class="col-4 d-flex flex-column justify-content-between">
+                <div class="bg--cover imgBox__img--1 h--half-space"></div>
+                <div class="bg--cover imgBox__img--2 h--half-space"></div>
+              </div>
+              <div class="col-8 ">
+                <div class="bg--cover h-100 imgBox__img--3"></div>
+              </div>
+            </div>
+            <div class="row h--half-space">
+              <div class="col-8 d-flex flex-column justify-content-between">
+                <div class="bg--cover imgBox__img--4 h--half-space"></div>
+                <div class="d-flex justify-content-between h--half-space">
+                  <div class="bg--cover imgBox__img--5 h-100 w--half-space"></div>
+                  <div class="bg--cover imgBox__img--6 h-100 w--half-space"></div>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="bg--cover imgBox__img--3 h-100"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <h3 class="section__title text--column text-dark">山巒水秀</h3>
+        </div>
+      </div>
+    </div>
+    <div class="section__bg bg-light-gray position-absolute w-100">
     </div>
   </div>
 </section>
-<section class="home__news">
+<section class="home__news mb-10">
   <div class="container-fluid">
-    <div class="row">
-      <div class="col-4">
-        <h2 class="section__title">最新公告</h2>
-        <p class="section__subTxt">追蹤我們吧</p>
+    <div class="row d-flex justify-content-center">
+      <div class="col-6">
+        <h2 class="section__title text-center">最新公告</h2>
+        <p class="section__subTxt text-center">追蹤我們吧</p>
       </div>
     </div>
-    <div class="row">
-      <div class="col-8">
-        <ul class="home__newsBox">
-          <li class="news__items">
-            <p class="news__items--date">2020.09.28</p>
-            <p class="news__items--type">活動</p>
-            <p class="news__items__content">2021年過年點燈活動即將開跑</p>
-          </li>
-          <li class="news__items">
-            <p class="news__items--date">2020.09.28</p>
-            <p class="news__items--type">活動</p>
-            <p class="news__items__content">2021年過年點燈活動即將開跑</p>
-          </li>
-          <li class="news__items">
-            <p class="news__items--date">2020.09.28</p>
-            <p class="news__items--type">活動</p>
-            <p class="news__items__content">2021年過年點燈活動即將開跑</p>
-          </li>
-          <li class="news__items">
-            <p class="news__items--date">2020.09.28</p>
-            <p class="news__items--type">活動</p>
-            <p class="news__items__content">2021年過年點燈活動即將開跑</p>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="home__openTime">
-  <div class="container">
-    <div class="row">
-      <div class="col-4">
-        <img src="./assets/img/openTime-img.png" alt="">
-      </div>
-      <div class="col-8">
-        <div>
-          <h2 class="section__title">交通＆開放時間</h2>
-          <p class="section__subTxt">來看看唷</p>
-          <ul class="openTime__infoList">
-            <li class="list__items">
-              <p class="list__items__title">地址</p>
-              <p class="list__items__txt">新北市石門區崁子腳路41之3號</p>
+    <div class="box">
+      <div class="row d-flex justify-content-center bg-primary">
+        <div class="col-8 py-4">
+          <ul class="newsList">
+            <li class="news__items d-flex justify-content-around rounded">
+              <p class="news__items--date">2020.09.28</p>
+              <p class="news__items--type">活動</p>
+              <p class="news__items__content">2021年過年點燈活動即將開跑</p>
             </li>
-            <li class="list__items">
-              <p class="list__items__title">電話</p>
-              <p class="list__items__txt">02 2638 2076</p>
+            <li class="news__items d-flex justify-content-around rounded">
+              <p class="news__items--date">2020.09.28</p>
+              <p class="news__items--type">活動</p>
+              <p class="news__items__content">2021年過年點燈活動即將開跑</p>
             </li>
-            <li class="list__items">
-              <p class="list__items__title">開放時間</p>
-              <p class="list__items__txt">每日早上 8 點 -下午 5 點</p>
+            <li class="news__items d-flex justify-content-around rounded">
+              <p class="news__items--date">2020.09.28</p>
+              <p class="news__items--type">活動</p>
+              <p class="news__items__content">2021年過年點燈活動即將開跑</p>
+            </li>
+            <li class="news__items d-flex justify-content-around rounded">
+              <p class="news__items--date">2020.09.28</p>
+              <p class="news__items--type">活動</p>
+              <p class="news__items__content">2021年過年點燈活動即將開跑</p>
             </li>
           </ul>
         </div>
@@ -149,7 +157,101 @@ current: index
     </div>
   </div>
 </section>
-<section class="home__introGod">
+
+<section class="home__openTime position-relative">
+  <h2 class="section__title text-center">交通＆開放時間</h2>
+  <p class="section__subTxt text-center mb-10">來看看唷</p>
+  <div class="container">
+    <div class="row mb-10">
+      <div class="col-5 ">
+        <div class="section__pic bg--cover"></div>
+      </div>
+      <div class="col-7">
+        <div>
+          <ul class="openTime__infoList d-flex justify-content-around pt-10">
+            <li class="list__items ticket border border-logo-red">
+              <div class="ticket__color "></div>
+              <div class="d-flex justify-content-between ticket__content border border-logo-red">
+                <div class="side-box">
+                  <div class="h-50 border-bottom border-logo-red"></div>
+                  <div class="h-50 "></div>
+                </div>
+                <div class="ticket__content__txtBox border-logo-red ">
+                  <p class="ticket__content__title">地址</p>
+                  <p class="ticket__content__txt">新北市石門區崁子腳路41之3號</p>
+                </div>
+                <div class="side-box">
+                  <div class="h-50 border-bottom border-logo-red"></div>
+                  <div class="h-50 "></div>
+                </div>
+              </div>
+              <div class="ticket-name border border-logo-red p-1 ">
+                <p class="text-center">石門金剛宮</p>
+              </div>
+            </li>
+            <li class="list__items ticket border border-logo-blue mt-8">
+              <div class="ticket__color bg-logo-blue"></div>
+              <div class="d-flex justify-content-between ticket__content border border-logo-blue ">
+                <div class="side-box">
+                  <div class="h-50 border-bottom border-logo-blue"></div>
+                  <div class="h-50"></div>
+                </div>
+                <div class="ticket__content__txtBox border-logo-blue ">
+                  <p class="ticket__content__title">電話</p>
+                  <p class="ticket__content__txt">02 2638 2076</p>
+                </div>
+                <div class="side-box">
+                  <div class="h-50 border-bottom border-logo-blue"></div>
+                  <div class="h-50 "></div>
+                </div>
+              </div>
+              <div class="ticket-name border border-logo-blue p-1">
+                <p class="text-center">石門金剛宮</p>
+              </div>
+            </li>
+            <li class="list__items ticket border border-primary mt-14">
+              <div class="ticket__color bg-primary"></div>
+              <div class="d-flex justify-content-between ticket__content border border-primary ">
+                <div class="side-box">
+                  <div class="h-50 border-bottom border-primary"></div>
+                  <div class="h-50 "></div>
+                </div>
+                <div class="ticket__content__txtBox border-primary">
+                  <p class="ticket__content__title">開放時間</p>
+                  <p class="ticket__content__txt">每日早上8點～下午5點</p>
+                </div>
+                <div class="side-box">
+                  <div class="h-50 border-bottom border-primary"></div>
+                  <div class="h-50 "></div>
+                </div>
+              </div>
+              <div class="ticket-name border border-primary p-1">
+                <p class="text-center">石門金剛宮</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="row d-flex justify-content-center">
+      <div class="col-10">
+        <div>
+          <iframe class="home__googleMap mb-10"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3607.5152307068756!2d121.5312599154501!3d25.286887934260267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442b680dd1dc72d%3A0x1cf20251e1b33b16!2z6YeR5Ymb5a6u5Zub6Z2i5L2b77yI5L2N5pa85YWo5Y-w5pyA5YyX56uv77yJ!5e0!3m2!1szh-TW!2stw!4v1603541713181!5m2!1szh-TW!2stw"
+            frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mb-14">
+    <div class="row">
+      <div class="col-8">
+        <div class="banner bg--cover position-absolute"></div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="home__introGod ">
   <div class="container">
     <div class="row">
       <div class="col-3">
@@ -172,20 +274,54 @@ current: index
 </section>
 <section class="home__contact">
   <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <h2 class="section__title">聯絡我們</h2>
-        <p class="section__subTxt">如有需求，歡迎填寫資料連路我們，也能追蹤我們臉書和line，緊密保持聯繫。</p>
+    <div class="row d-flex justify-content-center mb-10">
+      <div class="col-5">
+        <h2 class="section__title text-center">聯絡我們</h2>
+        <p class="section__subTxt text-center ">如有需求，歡迎填寫資料連路我們，也能追蹤我們臉書和line，緊密保持聯繫。</p>
       </div>
+    </div>
+    <div class="row">
       <div class="col-6">
-        <ul class="contact__infoList">
-          <li class="list__items">
-            <p class="list__items__title">地址</p>
-            <p class="list__items__txt">新北市石門區崁子腳路41之3號</p>
+        <ul class="contact__infoList d-flex ">
+          <li class="list__items ticket border border-logo-red ">
+            <div class="ticket__color"></div>
+            <div class="d-flex justify-content-between ticket__content border border-logo-red">
+              <div class="side-box">
+                <div class="h-50 border-bottom border-logo-red"></div>
+                <div class="h-50 "></div>
+              </div>
+              <div class="ticket__content__txtBox border-logo-red ">
+                <p class="ticket__content__title">地址</p>
+                <p class="ticket__content__txt">新北市石門區崁子腳路41之3號</p>
+              </div>
+              <div class="side-box">
+                <div class="h-50 border-bottom border-logo-red"></div>
+                <div class="h-50 "></div>
+              </div>
+            </div>
+            <div class="ticket-name border border-logo-red p-1 ">
+              <p class="text-center">石門金剛宮</p>
+            </div>
           </li>
-          <li class="list__items">
-            <p class="list__items__title">地址</p>
-            <p class="list__items__txt">新北市石門區崁子腳路41之3號</p>
+          <li class="list__items ticket border border-logo-red ">
+            <div class="ticket__color "></div>
+            <div class="d-flex justify-content-between ticket__content border border-logo-red">
+              <div class="side-box">
+                <div class="h-50 border-bottom border-logo-red"></div>
+                <div class="h-50 "></div>
+              </div>
+              <div class="ticket__content__txtBox border-logo-red ">
+                <p class="ticket__content__title">地址</p>
+                <p class="ticket__content__txt">新北市石門區崁子腳路41之3號</p>
+              </div>
+              <div class="side-box">
+                <div class="h-50 border-bottom border-logo-red"></div>
+                <div class="h-50 "></div>
+              </div>
+            </div>
+            <div class="ticket-name border border-logo-red p-1 ">
+              <p class="text-center">石門金剛宮</p>
+            </div>
           </li>
         </ul>
       </div>
