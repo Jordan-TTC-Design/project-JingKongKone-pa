@@ -144,7 +144,7 @@
 //首頁最新消息
 .home__news{
     .banner{
-        background-image: url(../img/flower.jpg);
+        background-image:url(../img/Flower-yellow-gray.png);
         background-position: center center ;
     }
     .newsList{
@@ -233,6 +233,9 @@
     .list__items{
         width: 380px;
         height: 480px;
+        @media (max-width: 767px) {
+        height: 320px;
+        }
         transition: all 0.3s ease;
         .list__contentBox{
             position: relative;
@@ -318,19 +321,19 @@
             }
         }
     }
-
-
-    .home__contact{
+    .home__contact{   
         .ticket::before{
-            left: -16%;
-            }
+        top:48%;
+        }
     }
+
+    
     @media (max-width: 767px) {
         .home__contact{   
             .ticket::before{
             width: 80px;
-            left: -12%;
-            bottom: 0%;
+            right: -12%;
+            top:-12%;
             }
         }
     }

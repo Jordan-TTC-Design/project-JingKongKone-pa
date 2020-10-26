@@ -14825,7 +14825,7 @@ p {
 }
 
 .home__news .banner {
-  background-image: url(../img/flower.jpg);
+  background-image: url(../img/Flower-yellow-gray.png);
   background-position: center center;
 }
 
@@ -14937,6 +14937,12 @@ p {
   transition: all 0.3s ease;
 }
 
+@media (max-width: 767px) {
+  .godList .list__items {
+    height: 320px;
+  }
+}
+
 .godList .list__items .list__contentBox {
   position: relative;
   display: -webkit-box;
@@ -15045,14 +15051,14 @@ p {
 }
 
 .home__contact .ticket::before {
-  left: -16%;
+  top: 48%;
 }
 
 @media (max-width: 767px) {
   .home__contact .ticket::before {
     width: 80px;
-    left: -12%;
-    bottom: 0%;
+    right: -12%;
+    top: -12%;
   }
 }
 
