@@ -1,4 +1,6 @@
-$(document).ready(() => {
+"use strict";
+
+$(document).ready(function () {
   // console.log('Hello Bootstrap4');
   var swiper = new Swiper('.swiper-container', {
     slidesPerView: 2,
@@ -6,10 +8,9 @@ $(document).ready(() => {
     // centeredSlides: true,
     pagination: {
       el: '.swiper-pagination',
-      clickable: true,
-    },
+      clickable: true
+    }
   });
-
   $(window).scroll(function () {
     if ($(window).scrollTop() > 60) {
       $('.header').addClass('stickey');
@@ -17,5 +18,5 @@ $(document).ready(() => {
       $('.header').removeClass('stickey');
     }
   });
-
 });
+//# sourceMappingURL=all.js.map

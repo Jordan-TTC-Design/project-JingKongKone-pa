@@ -1,0 +1,336 @@
+//首頁大banner
+.home__banner{
+    .section__bg{
+        height: 75%;
+    }
+    .banner{
+        background-image:  linear-gradient(rgba(0, 0, 0, 0.5),rgba(0,0,0,0.5)),url(../img/banner-bg1.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    &__box{
+        height: 100vh;
+        position: relative;
+        @media (max-width: 767px) { 
+            height: 90vh;
+
+         }
+    }
+    
+    .yellow-flower{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        background-color: $primary;
+        position: absolute;
+        top: 50%;
+        left: 0px;
+        transform: translate3d(-50%,-50%,0);
+        @media (max-width: 767px) { 
+            top: 100%;
+            left: 50%; 
+         }
+    }
+    &__title,h5{
+        color:white;
+    }
+}
+
+.home__report{
+    position: relative;
+    .section__bg{
+        width: 100%;
+        height: 64px;
+        left: 0;
+        position: absolute;
+        bottom: -40px;
+    }
+    .report__video__txtbox{
+        position: absolute;
+        z-index: 1;
+        bottom: 0;
+        left: -15%;
+        background-color: $light-gray;
+    }
+    .youtube{
+        width: 100%;
+        height: 360px;
+    }
+    @media (max-width: 767px) {
+        .report__video__txtbox{
+        position: relative;
+        left: 0;
+    }
+    .youtube{
+        height: 240px;
+        margin-bottom: 24px;
+    }
+    }
+}
+
+//首頁關於我
+.home__aboutUs{
+    margin-bottom: 160px;
+    .section__title,.section__subTxt{
+        position: relative;
+        color:white;
+    }
+    .banner{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0,0,0,0.3)),url(../img/banner-bg1.jpg);
+    }
+    .section__bg{
+        width: 60%;
+        height: 400px;
+        bottom: -80px;
+        right: 0;
+        background-image: url(../img/paper-gray.jpg);
+    }
+    .aboutUs__imgBox{
+        height: 800px;
+    }
+    .section__subTitle{
+        writing-mode: vertical-lr;
+        text-orientation: upright;
+        @media (max-width: 767px) {
+            writing-mode: horizontal-tb;
+        text-orientation: upright;
+        }    
+            
+    }
+    .section__subTitle::after{
+        content: '';
+        width: 2px;
+        height: 60%;
+        background-color: $dark;
+        position: absolute;
+        top: 320px;
+        left: 50%;
+        @media (max-width: 767px) {
+            width: 80%;
+            height: 2px;
+            top: 16px;
+            left: 100%;
+        }  
+    }
+    .imgBox__img--1{
+        background-image: url(../img/banner-bg1.jpg);
+    }
+    .imgBox__img--2{
+        background-image: url(../img/banner-bg1.jpg);
+    }
+    .imgBox__img--3{
+        background-image: url(../img/banner-bg1.jpg);
+    }
+    
+    .imgBox__img--4{
+        background-image: url(../img/banner-bg1.jpg);
+    }
+    
+    .imgBox__img--5{
+        background-image: url(../img/banner-bg1.jpg);
+    }
+    .imgBox__img--6{
+        background-image: url(../img/banner-bg1.jpg);
+    }
+    .imgBox__img--7{
+        background-image: url(../img/banner-bg1.jpg);
+    }
+    
+}
+
+//首頁最新消息
+.home__news{
+    .banner{
+        background-image: url(../img/flower.jpg);
+        background-position: center center ;
+    }
+    .newsList{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 48px;
+        .news__items{
+            width: 100%;
+                padding: 16px;
+                background-color: white;
+                p{
+                    margin-bottom: 0;
+                }
+                &:not(:last-child){
+                    margin-bottom: 16px;
+                }
+        }
+        .list__btn{
+            width: 40%;
+        }
+    }
+    
+}
+//首頁開放時間
+.home__openTime{
+    .section__pic{
+        background-image: url(../img/openTime-img.png);
+        width: 80%;
+        margin: 0 auto ;
+        height: 500px;
+        @media (max-width: 767px) {
+            width: 100%;
+        height: 240px;
+        }
+    }
+    .home__googleMap{
+        width: 100%;
+        height: 400px;
+    }
+    .banner{
+        background-image: url(../img/paper-bg.jpg);
+        height: 480px;
+        width: 100%;
+        bottom: -120px;
+        left: 0;
+        z-index: -1;
+    }
+    @media (max-width: 767px) {
+        .banner{
+            height: 360px;
+            bottom: 0px;
+        }
+        .section__pic{
+                width: 100%;
+            height: 240px;
+        }
+    }
+}
+//首頁神佛介紹
+.home__introGod__txtBox{
+    position: absolute;
+    }
+@media (max-width: 767px) {
+    .home__introGod__txtBox{
+        position: relative;
+    text-align: center;
+    margin-bottom: 48px;
+    }
+}
+.home__introGod__godListBox{
+    width: 50%;
+}
+@media (max-width: 992px) {
+    .home__introGod__godListBox{
+        width: 45%;
+    }
+}
+@media (max-width: 767px) {
+    .home__introGod__godListBox{
+        padding-left: 48px;
+        width: 100%;
+    }
+}
+.godList{
+    .list__items{
+        width: 380px;
+        height: 480px;
+        transition: all 0.3s ease;
+        .list__contentBox{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 24px;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0,0,0,0.6)) 
+        }
+        .list__title{
+            font-size: 24px;
+            color:white;
+            font-weight: bold;
+            writing-mode: vertical-lr;
+            text-orientation: upright;
+            
+        }
+        .list__btn{
+            color:white;
+            width: 100%;
+            border-radius: 0;
+        }
+        .list__btn:hover{
+            border-bottom: 2px solid white;
+        }
+    }
+    }
+    
+    #homeGodList-img-1{
+        background-image: url(../img/openTime-img.png);
+    }
+    #homeGodList-img-2{
+        background-image: url(../img/openTime-img.png);
+    }
+    #homeGodList-img-3{
+        background-image: url(../img/openTime-img.png);
+    }
+    #homeGodList-img-4{
+        background-image: url(../img/openTime-img.png);
+    }
+    #homeGodList-img-5{
+        background-image: url(../img/openTime-img.png);
+    }
+    #homeGodList-img-6{
+        background-image: url(../img/openTime-img.png);
+    }
+    .list__items:hover{
+        .list__contentBox{
+            background: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0,0,0,0.4)) 
+        }
+        .list__btn{
+            border-bottom: 2px solid white;
+        }
+    }
+    .home__introGod{
+        .section__subTitle{
+            font-size: 40px;
+            color:#C49B10;
+            bottom: 0;
+            left: 48px;
+            transform: translateY(75%);
+            @media (max-width: 992px) {
+                font-size: 33px;
+            }
+        }
+        
+        .banner{
+            height: 360px;
+            width: 56%;
+            bottom: 0px;
+            z-index: -1;
+            right:0;
+        }
+    }
+    @media (max-width: 767px) {
+        .home__introGod{
+            .banner{
+                width: 100%;
+                right: 0;
+                left: 0;
+            }
+        }
+    }
+
+
+    .home__contact{
+        .ticket::before{
+            left: -16%;
+            }
+    }
+    @media (max-width: 767px) {
+        .home__contact{   
+            .ticket::before{
+            width: 80px;
+            left: -12%;
+            bottom: 0%;
+            }
+        }
+    }

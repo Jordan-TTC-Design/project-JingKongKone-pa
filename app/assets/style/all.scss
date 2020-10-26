@@ -5,5 +5,12 @@
 // 官方的bs4 css
 @import "mixins";
 @import "bootstrap";
-
+// @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;500;700;900&display=swap');
+//外掛
+@import "./helpers/_swiper.scss";
+// 以下是關於客製化
 @import "_base.scss";
+//本次scss
+@import "_tool.scss";
+@import "_layout.scss";
+@import "_page.scss";

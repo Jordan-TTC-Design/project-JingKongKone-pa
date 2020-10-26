@@ -34,14 +34,14 @@ $grays: map-merge(
   $grays
 );
 
-$blue:    #007bff !default;
+$blue:    #148CF5 !default;//#007bff
 $indigo:  #6610f2 !default;
 $purple:  #6f42c1 !default;
 $pink:    #e83e8c !default;
 $red:     #dc3545 !default;
 $orange:  #fd7e14 !default;
 $yellow:  #ffc107 !default;
-$green:   #28a745 !default;
+$green:   #00BE14 !default;//#28a745
 $teal:    #20c997 !default;
 $cyan:    #17a2b8 !default;
 
@@ -95,7 +95,10 @@ $theme-colors: map-merge(
     "dark":       $dark,
     "light-gray":       $light-gray,
     "logo-blue":       $logo-blue,
-    "logo-red":       $logo-red
+    "logo-red":       $logo-red,
+    "blue":       $blue,
+    "green":       $green
+
   ),
   $theme-colors
 );
@@ -298,10 +301,9 @@ $embed-responsive-aspect-ratios: join(
 // Typography
 //
 // Font, line-height, and color for body text, headings, and more.
-
 // stylelint-disable value-keyword-case
-$font-family-sans-serif:      -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
-$font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+$font-family-sans-serif:      'Noto Serif TC', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-monospace:       'Noto Serif TC', SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 $font-family-base:            $font-family-sans-serif !default;
 // stylelint-enable value-keyword-case
 
