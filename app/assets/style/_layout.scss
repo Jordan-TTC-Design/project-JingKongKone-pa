@@ -53,18 +53,7 @@
 
 
 //footer
-.footer__nav{
-    padding: 0;
-    .nav__items{
-        writing-mode: vertical-lr;
-        text-orientation: upright;
-        .btn{
-            border-radius: 0;
-            border-left: 1px solid #CCCCCC;
-        }
-       
-    }
-}
+
 .footer__infoList{
     padding: 0;
     .list__items__title{
@@ -77,9 +66,25 @@
 }
 .footer__navBox{
     width: 60%;
-    margin-top: 108px;
-
-    // height: calc(100% - 108px);
+    display: flex;
+    flex-direction: column;
+    .section__bg{
+        height: 120px;
+        width: 100%;
+        background:url(../img/bg-line.png);
+    }
+    .footer__nav{
+        padding: 0;
+        .nav__items{
+            writing-mode: vertical-lr;
+            text-orientation: upright;
+            .btn{
+                border-radius: 0;
+                border-left: 1px solid #CCCCCC;
+            }
+           
+        }
+    }
 }
 .footer__logoBox{
     width: 40%;

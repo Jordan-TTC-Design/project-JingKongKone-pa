@@ -187,9 +187,9 @@
     }
     .banner{
         background-image: url(../img/paper-bg.jpg);
-        height: 480px;
+        height: 420px;
         width: 100%;
-        bottom: -120px;
+        bottom: -64px;
         left: 0;
         z-index: -1;
     }
@@ -321,7 +321,31 @@
             }
         }
     }
+    .home__fire{
+        margin-bottom: 160px;
+       .section__content__txtBox{
+           padding: 120px 120px;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0,0,0,0.6)),url(../img/fire.jpg);
+            p{
+                color:white;
+            }      
+        } 
+        .section__bg{
+            position: absolute;
+            bottom: -100px;
+            left: 0;
+            height: 320px;
+            width: 100%;
+            background:url(../img/bg-line.png);
+        }
+        @media (max-width: 767px) {
+            .section__content__txtBox{
+                padding: 64px 32px;
+        }
+    }
+    }
     .home__contact{   
+        margin-bottom: 160px;
         .ticket::before{
         top:48%;
         }

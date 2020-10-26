@@ -14592,23 +14592,6 @@ p {
           box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
-.footer__nav {
-  padding: 0;
-}
-
-.footer__nav .nav__items {
-  -webkit-writing-mode: vertical-lr;
-      -ms-writing-mode: tb-lr;
-          writing-mode: vertical-lr;
-  -webkit-text-orientation: upright;
-          text-orientation: upright;
-}
-
-.footer__nav .nav__items .btn {
-  border-radius: 0;
-  border-left: 1px solid #CCCCCC;
-}
-
 .footer__infoList {
   padding: 0;
 }
@@ -14624,7 +14607,36 @@ p {
 
 .footer__navBox {
   width: 60%;
-  margin-top: 108px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer__navBox .section__bg {
+  height: 120px;
+  width: 100%;
+  background: url(../img/bg-line.png);
+}
+
+.footer__navBox .footer__nav {
+  padding: 0;
+}
+
+.footer__navBox .footer__nav .nav__items {
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  -webkit-text-orientation: upright;
+          text-orientation: upright;
+}
+
+.footer__navBox .footer__nav .nav__items .btn {
+  border-radius: 0;
+  border-left: 1px solid #CCCCCC;
 }
 
 .footer__logoBox {
@@ -14882,9 +14894,9 @@ p {
 
 .home__openTime .banner {
   background-image: url(../img/paper-bg.jpg);
-  height: 480px;
+  height: 420px;
   width: 100%;
-  bottom: -120px;
+  bottom: -64px;
   left: 0;
   z-index: -1;
 }
@@ -15048,6 +15060,40 @@ p {
     right: 0;
     left: 0;
   }
+}
+
+.home__fire {
+  margin-bottom: 160px;
+}
+
+.home__fire .section__content__txtBox {
+  padding: 120px 120px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(../img/fire.jpg);
+  background-image: -o-linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/fire.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/fire.jpg);
+}
+
+.home__fire .section__content__txtBox p {
+  color: white;
+}
+
+.home__fire .section__bg {
+  position: absolute;
+  bottom: -100px;
+  left: 0;
+  height: 320px;
+  width: 100%;
+  background: url(../img/bg-line.png);
+}
+
+@media (max-width: 767px) {
+  .home__fire .section__content__txtBox {
+    padding: 64px 32px;
+  }
+}
+
+.home__contact {
+  margin-bottom: 160px;
 }
 
 .home__contact .ticket::before {
