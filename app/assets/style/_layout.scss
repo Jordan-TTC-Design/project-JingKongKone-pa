@@ -1,9 +1,14 @@
 //header
 .header{
-    // position: relative;
     z-index: 150;
     background: #000;
     box-shadow:0;
+    padding: 48px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    transition: all 0.2s ease;
+
 }
 
 .header__logo{
@@ -13,9 +18,12 @@
     }
 }
 .header__nav{
+    margin: 0 50px;
+    border-bottom: 1px solid #cccccc;
     .nav__items{
         .btn{
             border-radius: 0px;
+            height: 44px;
         }
         .btn:hover{
             border-bottom: 2px solid $primary;
@@ -29,8 +37,6 @@
             margin: 12px 0;
             border-bottom: 1px solid #cccccc;
         }
-
-        
     }
 }
 .header__nav--hamburger{
@@ -43,11 +49,14 @@
 
 //header fixed
 .header.stickey{
-    position: fixed;
+    transition: all 0.3s ease;
+    padding: 8px 0;
     width: 100%;
     z-index: 99;
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-    
+    .header__nav{
+        border: 0 ;
+    }
 }
 
 
@@ -73,29 +82,21 @@
         width: 100%;
         background:url(../img/bg-line.png);
     }
-    .footer__nav{
-        padding: 0;
-        .nav__items{
-            writing-mode: vertical-lr;
-            text-orientation: upright;
-            .btn{
-                border-radius: 0;
-                border-left: 1px solid #CCCCCC;
-            }
-           
-        }
-    }
 }
 .footer__logoBox{
-    width: 40%;
+    width: 100%;
+    .section__txt{
+        letter-spacing: 12px;
+        writing-mode: vertical-lr;
+        text-orientation: upright;
+        color:white;
+    }
+    .copy-right{
+        color:white;
+    }
 }
 @media (max-width: 767px) {
     .footer__logoBox{
         width: 100%;
-    }
-    .footer__navBox{
-        width: 100%;
-    margin-top: 0;
-
     }
 }

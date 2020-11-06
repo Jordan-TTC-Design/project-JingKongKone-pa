@@ -12,7 +12,7 @@ $(document).ready(function () {
     }
   });
   $(window).scroll(function () {
-    if ($(window).scrollTop() > 60) {
+    if ($(window).scrollTop() > 200) {
       $('.header').addClass('stickey');
     } else {
       $('.header').removeClass('stickey');

@@ -1,7 +1,9 @@
 //首頁大banner
 .home__banner{
+    padding-top: 200px;
     .section__bg{
-        height: 75%;
+        top: -30%;
+        height: 80%;
     }
     .banner{
         background-image:  linear-gradient(rgba(0, 0, 0, 0.5),rgba(0,0,0,0.5)),url(../img/banner-bg1.jpg);
@@ -9,11 +11,13 @@
         background-repeat: no-repeat;
     }
     &__box{
+        background-image:  linear-gradient(rgba(0, 0, 0, 0.5),rgba(0,0,0,0.5)),url(../img/banner-bg1.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin: 0 50px;
         height: 100vh;
-        position: relative;
         @media (max-width: 767px) { 
             height: 90vh;
-
          }
     }
     
@@ -34,7 +38,19 @@
             left: 50%; 
          }
     }
-    &__title,h5{
+    .section__subTitle{
+        position: relative;
+        &::before{
+            content: '';
+            border-right: 1px solid #cccccc;
+            height: 180px;
+            position: absolute;
+            top: -200px;
+            left: 50%;
+            transform: translateX(50%);
+        }
+    }
+    .section__title,.section__txt{
         color:white;
     }
 }
@@ -49,15 +65,31 @@
         bottom: -40px;
     }
     .report__video__txtbox{
-        position: absolute;
-        z-index: 1;
-        bottom: 0;
-        left: -15%;
-        background-color: $light-gray;
+        height: 100%;
+        padding: 0 24px;
+        background-color: $white;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .txtbox__title{
+            font-weight: bold;
+        }
     }
     .youtube{
         width: 100%;
         height: 360px;
+        border-radius: 8px;
+    }
+    .section__bgCover{
+        height: 180px;
+        width: 80px;
+        border-radius: 8px 0px 0px 0px;
+        background-color: $white;
+        position: absolute;
+        bottom: 0;
+        right: 0;
     }
     @media (max-width: 767px) {
         .report__video__txtbox{
@@ -73,7 +105,7 @@
 
 //首頁關於我
 .home__aboutUs{
-    margin-bottom: 160px;
+    margin-bottom: 198px;
     .section__title,.section__subTxt{
         position: relative;
         color:white;
@@ -82,7 +114,7 @@
         background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0,0,0,0.3)),url(../img/banner-bg1.jpg);
     }
     .section__bg{
-        width: 60%;
+        width: 100%;
         height: 400px;
         bottom: -80px;
         right: 0;
@@ -90,6 +122,7 @@
     }
     .aboutUs__imgBox{
         height: 800px;
+        
     }
     .section__subTitle{
         writing-mode: vertical-lr;
@@ -115,6 +148,7 @@
             left: 100%;
         }  
     }
+    
     .imgBox__img--1{
         background-image: url(../img/banner-bg1.jpg);
     }
@@ -143,47 +177,65 @@
 
 //首頁最新消息
 .home__news{
-    .banner{
-        background-image:url(../img/Flower-yellow-gray.png);
-        background-position: center center ;
-    }
     .newsList{
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 48px;
+        // padding: 48px;
         .news__items{
             width: 100%;
-                padding: 16px;
-                background-color: white;
-                p{
-                    margin-bottom: 0;
-                }
-                &:not(:last-child){
-                    margin-bottom: 16px;
-                }
+            background-color: white;
+            p{
+                margin-bottom: 0;
+            }
+            
         }
-        .list__btn{
-            width: 40%;
+        
+    }
+    .section__btn{
+        text-decoration: none;
+        font-size: 16px;
+        border: 1px solid $gray-300;
+        color:$dark;
+        &:hover{
+            color:$primary;
+            border: 1px solid $primary;
         }
     }
-    
 }
 //首頁開放時間
 .home__openTime{
+    margin-bottom: 216px;
     .section__pic{
-        background-image: url(../img/openTime-img.png);
         width: 80%;
         margin: 0 auto ;
         height: 500px;
         @media (max-width: 767px) {
-            width: 100%;
+        width: 100%;
         height: 240px;
         }
     }
+    .section__contentBox{
+        padding: 96px 48px;
+        background-image: url(../img/paper-gray.jpg);
+        border-radius: 8px;
+        .list__items{
+            display: flex;
+        }
+        .list__items__title{
+            font-weight: bold;
+            margin-right: 24px;
+        }
+    }
+    .home__googleMapBox{
+        position: absolute;
+        top: 108px;
+        right: 0;
+    }
     .home__googleMap{
+        border-radius: 8px;
         width: 100%;
-        height: 400px;
+        height: 360px;
     }
     .banner{
         background-image: url(../img/paper-bg.jpg);
@@ -205,6 +257,9 @@
     }
 }
 //首頁神佛介紹
+.home__introGod{
+    margin-bottom: 136px;
+}
 .home__introGod__txtBox{
     position: absolute;
     }
@@ -229,15 +284,36 @@
         width: 100%;
     }
 }
+.home__introGod{
+    .section__subTitle{
+        font-size: 40px;
+        color:#C49B10;
+        bottom: 0;
+        left: 48px;
+        transform: translateY(75%);
+        @media (max-width: 992px) {
+            font-size: 33px;
+        }
+    }
+    .section__bg{
+        height: 360px;
+        width: 56%;
+        bottom: 0px;
+        z-index: -1;
+        right:0;
+        border-radius: 8px 0px 0px 8px;
+    }
+}
 .godList{
     .list__items{
-        width: 380px;
         height: 480px;
+        border-radius: 8px;
         @media (max-width: 767px) {
         height: 320px;
         }
         transition: all 0.3s ease;
         .list__contentBox{
+            border-radius: 8px;
             position: relative;
             display: flex;
             flex-direction: column;
@@ -265,7 +341,6 @@
         }
     }
     }
-    
     #homeGodList-img-1{
         background-image: url(../img/openTime-img.png);
     }
@@ -292,27 +367,8 @@
             border-bottom: 2px solid white;
         }
     }
-    .home__introGod{
-        .section__subTitle{
-            font-size: 40px;
-            color:#C49B10;
-            bottom: 0;
-            left: 48px;
-            transform: translateY(75%);
-            @media (max-width: 992px) {
-                font-size: 33px;
-            }
-        }
-        
-        .banner{
-            height: 360px;
-            width: 56%;
-            bottom: 0px;
-            z-index: -1;
-            right:0;
-        }
-    }
-    @media (max-width: 767px) {
+
+@media (max-width: 767px) {
         .home__introGod{
             .banner{
                 width: 100%;
@@ -320,39 +376,64 @@
                 left: 0;
             }
         }
-    }
-    .home__fire{
-        margin-bottom: 160px;
-       .section__content__txtBox{
-           padding: 120px 120px;
+}
+.home__fire{
+        margin-bottom: 228px;
+        .section__title,.section__subTxt{
+            text-align: right;
+        }
+        .section__content__txtBox{
+            width: 50%;
+            padding: 80px 120px;
+            border-radius: 0px 8px 8px 0px ;
             background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0,0,0,0.6)),url(../img/fire.jpg);
             p{
                 color:white;
             }      
         } 
-        .section__bg{
-            position: absolute;
-            bottom: -100px;
-            left: 0;
-            height: 320px;
-            width: 100%;
-            background:url(../img/bg-line.png);
-        }
         @media (max-width: 767px) {
             .section__content__txtBox{
                 padding: 64px 32px;
         }
     }
+    .section__bg{
+        border-radius: 0px 8px 8px 0px ;
+        position: absolute;
+        height: 100%;
+        width: 56%;
+        bottom: -120px;
     }
-    .home__contact{   
+}
+.sectionConcept{
+    height: 320px;
+    background:url(../img/bg-line.png);
+.section__subTitle{
+    position: relative;
+    font-size: 48px;
+    color:#CCCCCC;
+    &::after{
+        content: '';
+        position: absolute;
+        height: 8px;
+        background-color: #cccccc;
+        right: 0;
+        left: 0;
+        bottom: 0;
+    }
+}
+}
+.home__contact{   
         margin-bottom: 160px;
         .ticket::before{
         top:48%;
         }
-    }
+        input,textarea{
+            border: 1px solid $gray-300;
+        }
+}
 
     
-    @media (max-width: 767px) {
+@media (max-width: 767px) {
         .home__contact{   
             .ticket::before{
             width: 80px;
@@ -360,4 +441,4 @@
             top:-12%;
             }
         }
-    }
+ }

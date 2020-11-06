@@ -67,7 +67,7 @@ $colors: map-merge(
 );
 //**針對每次專案的色彩計畫不同，這裡修改與新增：
 //(新增顏色註記：)
-$primary:       #FFC811;//$blue !default;
+$primary:       #480C12;//$blue !default;
 $secondary:     $gray-600 !default;
 $success:       $green !default;
 $info:          $cyan !default;
@@ -76,8 +76,8 @@ $danger:        $red !default;
 $light:         $gray-100 !default;
 $dark:          $gray-800 !default;
 $light-gray:    #F2F2F2 !default;
-$logo-red: #C9453D !default; 
-$logo-blue: #31A5B4 !default; 
+$logo-color1: #FFC811  !default; 
+$logo-color2: #31A5B4 !default; 
 
 
 $theme-colors: () !default;
@@ -94,8 +94,8 @@ $theme-colors: map-merge(
     "light":      $light,
     "dark":       $dark,
     "light-gray":       $light-gray,
-    "logo-blue":       $logo-blue,
-    "logo-red":       $logo-red,
+    "logo-color1":       $logo-color1,
+    "logo-color2":       $logo-color2,
     "blue":       $blue,
     "green":       $green
 
@@ -169,7 +169,7 @@ $spacers: map-merge(
     11: ($spacer * 4.5),
     12: ($spacer * 5),
     13: ($spacer * 6),
-    14: ($spacer * 6.5)
+    14: ($spacer * 6.75)
   ),
   $spacers
 );

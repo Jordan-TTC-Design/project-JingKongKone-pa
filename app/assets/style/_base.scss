@@ -31,3 +31,13 @@ p{
             font-size: 32px;
     }
 }
+.section__btn{
+    font-size: 16px;
+    border: 1px solid $gray-300;
+    color:$dark;
+    &:hover{
+        text-decoration: none;
+        color:$primary;
+        border: 1px solid $primary;
+    }
+}
