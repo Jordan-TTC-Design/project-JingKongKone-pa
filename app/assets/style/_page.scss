@@ -20,23 +20,19 @@
             height: 90vh;
          }
     }
-    
-    .yellow-flower{
+    .home__banner__arrow{
+        position: absolute;
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 80px;
-        height: 80px;
+        width: 44px;
+        height: 44px;
+        background-color:rgba(255,255,255,0.36);
         border-radius: 50%;
-        background-color: $primary;
-        position: absolute;
-        top: 50%;
-        left: 0px;
-        transform: translate3d(-50%,-50%,0);
-        @media (max-width: 767px) { 
-            top: 100%;
-            left: 50%; 
-         }
+        bottom: 40%;
+        .fa-arrow-down{
+            color:white;
+        }
     }
     .section__subTitle{
         position: relative;
@@ -52,6 +48,18 @@
     }
     .section__title,.section__txt{
         color:white;
+    }
+    @media (max-width: 992px) {
+        padding-top: 80px;
+        &__box{
+            margin: 15px;
+        }
+        .section__subTitle{
+            &::before{
+                height: 120px;
+                top: -120px;
+            }
+        }
     }
 }
 
@@ -91,10 +99,31 @@
         bottom: 0;
         right: 0;
     }
+    .section__bgCover__coner{
+        position: absolute;
+        background-image: url(../img/半透明圓角.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        
+        width: 8px;
+        height: 8px;
+    } 
+    .bgCover__coner--1{
+        top:-8px;
+        right: 15px;
+    }
+    .bgCover__coner--2{
+        bottom:6px;
+        left:-8px;
+    }
     @media (max-width: 767px) {
         .report__video__txtbox{
         position: relative;
         left: 0;
+        padding: 16px 0px 0px 0px;
+    }
+    .section__title,.section__subTxt{
+        text-align: center;
     }
     .youtube{
         height: 240px;
@@ -111,7 +140,7 @@
         color:white;
     }
     .banner{
-        background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0,0,0,0.3)),url(../img/banner-bg1.jpg);
+        background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0,0,0,0.3)),url(../img/aboutUs-bg.png);
     }
     .section__bg{
         width: 100%;
@@ -122,7 +151,9 @@
     }
     .aboutUs__imgBox{
         height: 800px;
-        
+        @media (max-width: 767px) {
+            height: 600px;
+        }  
     }
     .section__subTitle{
         writing-mode: vertical-lr;
@@ -150,27 +181,27 @@
     }
     
     .imgBox__img--1{
-        background-image: url(../img/banner-bg1.jpg);
+        background-image: url(../img/aboutUs/aboutImg-3.jpg);
     }
     .imgBox__img--2{
-        background-image: url(../img/banner-bg1.jpg);
+        background-image: url(../img/aboutUs/aboutImg-2.jpg);
     }
     .imgBox__img--3{
-        background-image: url(../img/banner-bg1.jpg);
+        background-image: url(../img/aboutUs/aboutImg-1.jpg);
     }
     
     .imgBox__img--4{
-        background-image: url(../img/banner-bg1.jpg);
+        background-image: url(../img/aboutUs/aboutImg-7.jpg);
     }
     
     .imgBox__img--5{
-        background-image: url(../img/banner-bg1.jpg);
+        background-image: url(../img/aboutUs/aboutImg-6.jpg);
     }
     .imgBox__img--6{
-        background-image: url(../img/banner-bg1.jpg);
+        background-image: url(../img/aboutUs/aboutImg-4.jpg);
     }
     .imgBox__img--7{
-        background-image: url(../img/banner-bg1.jpg);
+        background-image: url(../img/aboutUs/aboutImg-8.jpg);
     }
     
 }
@@ -206,6 +237,9 @@
 //首頁開放時間
 .home__openTime{
     margin-bottom: 216px;
+    @media (max-width: 767px) {
+        margin-bottom: 96px;
+    }
     .section__pic{
         width: 80%;
         margin: 0 auto ;
@@ -231,24 +265,23 @@
         position: absolute;
         top: 108px;
         right: 0;
+        
     }
     .home__googleMap{
         border-radius: 8px;
         width: 100%;
         height: 360px;
     }
-    .banner{
-        background-image: url(../img/paper-bg.jpg);
-        height: 420px;
-        width: 100%;
-        bottom: -64px;
-        left: 0;
-        z-index: -1;
-    }
+    
     @media (max-width: 767px) {
-        .banner{
+        .section__contentBox{
+            padding: 36px 16px;
+            margin-bottom: 24px;
+        }
+        .home__googleMapBox{
+            position: relative;
+            top: 0px;
             height: 360px;
-            bottom: 0px;
         }
         .section__pic{
                 width: 100%;
@@ -302,12 +335,20 @@
         z-index: -1;
         right:0;
         border-radius: 8px 0px 0px 8px;
+        @media (max-width: 776px) {
+            width: 80%;
+            // right:50%;
+            // transform: translateX(50%);
+        }
     }
 }
 .godList{
     .list__items{
         height: 480px;
         border-radius: 8px;
+        @media (max-width: 992px) {
+            height: 360px;
+        }
         @media (max-width: 767px) {
         height: 320px;
         }
@@ -342,22 +383,22 @@
     }
     }
     #homeGodList-img-1{
-        background-image: url(../img/openTime-img.png);
+        background-image: url(../img/godListImg/god-3.jpg);
     }
     #homeGodList-img-2{
-        background-image: url(../img/openTime-img.png);
+        background-image: url(../img/godListImg/god-2.jpg);
     }
     #homeGodList-img-3{
-        background-image: url(../img/openTime-img.png);
+        background-image: url(../img/godListImg/god-1.jpg);
     }
     #homeGodList-img-4{
-        background-image: url(../img/openTime-img.png);
+        background-image: url(../img/godListImg/god-4.jpg);
     }
     #homeGodList-img-5{
-        background-image: url(../img/openTime-img.png);
+        background-image: url(../img/godListImg/god-3.jpg);
     }
     #homeGodList-img-6{
-        background-image: url(../img/openTime-img.png);
+        background-image: url(../img/godListImg/god-2.jpg);
     }
     .list__items:hover{
         .list__contentBox{
@@ -379,9 +420,26 @@
 }
 .home__fire{
         margin-bottom: 228px;
-        .section__title,.section__subTxt{
-            text-align: right;
+        @media (max-width: 992px) {
+            margin-bottom: 156px;
+             }
+        @media (max-width: 767px) {
+            margin-bottom: 96px;
+         }
+        .section__txtBox{
+            position: absolute;
+            bottom: 0;
+            .section__title,.section__subTxt{
+                text-align: right;
+            }
+            @media (max-width: 767px) {
+               position: relative;
+               .section__title,.section__subTxt{
+                text-align: center;
+            }
+            }
         }
+        
         .section__content__txtBox{
             width: 50%;
             padding: 80px 120px;
@@ -391,9 +449,17 @@
                 color:white;
             }      
         } 
+        @media (max-width: 992px) {
+            .section__content__txtBox{
+                padding: 36px 32px;
+            }
+        }
         @media (max-width: 767px) {
             .section__content__txtBox{
+                width: 80%;
+                margin:0 15px;
                 padding: 64px 32px;
+                border-radius: 8px;
         }
     }
     .section__bg{
@@ -402,25 +468,38 @@
         height: 100%;
         width: 56%;
         bottom: -120px;
+        @media (max-width: 992px) {
+            bottom: -48px;
+        }
+        @media (max-width: 767px) {
+            width: 64%;
+           height: 50%;
+           border-radius: 8px;
+         }
     }
 }
 .sectionConcept{
     height: 320px;
     background:url(../img/bg-line.png);
-.section__subTitle{
-    position: relative;
-    font-size: 48px;
-    color:#CCCCCC;
-    &::after{
-        content: '';
-        position: absolute;
-        height: 8px;
-        background-color: #cccccc;
-        right: 0;
-        left: 0;
-        bottom: 0;
+    .section__subTitle{
+        position: relative;
+        color:#CCCCCC;
+        &::after{
+            content: '';
+            position: absolute;
+            height: 8px;
+            background-color: #cccccc;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            }
     }
-}
+    @media (max-width: 767px) {
+        height: 240px;
+        .section__subTitle::after{
+            height: 4px;
+        }
+    }
 }
 .home__contact{   
         margin-bottom: 160px;

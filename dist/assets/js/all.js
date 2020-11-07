@@ -17,6 +17,8 @@ $(document).ready(function () {
     } else {
       $('.header').removeClass('stickey');
     }
-  });
+  }); //aos套件
+
+  AOS.init();
 });
 //# sourceMappingURL=all.js.map

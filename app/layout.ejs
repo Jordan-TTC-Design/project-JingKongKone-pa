@@ -7,50 +7,51 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title><%- title %></title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
-  <link rel="stylesheet" href="./assets/style/all.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;500;700;900&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="./assets/style/all.css">
 
 </head>
 
 <body>
   <header class="header bg-light-gray ">
-    <div class="container-fluid">
-      <div class="row py-4">
-        <div class="col-12 d-flex  justify-content-end align-items-center">
-          <ul class="header__nav  d-md-flex d-none  justify-content-between align-items-center  w-100">
+    <div class=" container-fluid">
+      <div class="row py-lg-4">
+        <div class="col-12 d-flex  justify-content-between align-items-center px-lg-0 px-8">
+          <ul class="header__nav  d-lg-flex d-none  justify-content-between align-items-center  w-100">
             <li class="nav__items"><a class="btn" href="#home__report">相關報導</a></li>
             <li class="nav__items"><a class="btn" href="#home__aboutUs">關於本宮</a></li>
             <li class="nav__items"><a class="btn" href="#home__news">最新公告</a></li>
             <li class="nav__items"><a class="btn" href="#home__fire">我要點燈</a></li>
           </ul>
-          <h1 class="header__logo"><a href="#"><img width="100px" src="assets/img/Logo-color.svg" alt="金剛宮logo"></a>
+          <h1 class="header__logo"><a href="#"><img src="assets/img/Logo-color.svg" alt="金剛宮logo"></a>
           </h1>
-          <ul class="header__nav  d-md-flex d-none  justify-content-between align-items-center  w-100">
+          <ul class="header__nav  d-lg-flex d-none  justify-content-between align-items-center  w-100">
             <li class="nav__items"><a class="btn" href="#home__introGod">神佛介紹</a></li>
             <li class="nav__items"><a class="btn" href="#home__openTime">交通資訊</a></li>
             <li class="nav__items"><a class="btn" href="#home__openTime">開放時間</a></li>
             <li class="nav__items"><a class="btn" href="#home__contact">聯絡我們</a></li>
           </ul>
-          <button class="navbar-toggler border-0 pl-0 d-md-none " type="button" data-toggle="collapse"
+          <button class="navbar-toggler border-0 pl-0 d-lg-none " type="button" data-toggle="collapse"
             data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
             aria-label="Toggle navigation">
             <i class="fas fa-bars" id="header__nav--hamburger-icon"></i>
           </button>
         </div>
       </div>
-      <div class=" col-md-12 col-12 d-md-none d-flex justify-content-center">
+      <div class=" col-md-12 col-12 d-lg-none d-flex justify-content-center">
         <div class="collapse navbar-collapse mr-auto" id="navbarSupportedContent">
           <ul class="header__nav header__nav--sm ">
             <li class="nav__items"><a class="btn" href="#home__report">相關報導</a></li>
             <li class="nav__items"><a class="btn" href="#home__aboutUs">關於本宮</a></li>
             <li class="nav__items"><a class="btn" href="#home__news">最新公告</a></li>
-            <li class="nav__items"><a class="btn" href="#home__openTime">交通&開放時間</a></li>
             <li class="nav__items"><a class="btn" href="#home__fire">我要點燈</a></li>
             <li class="nav__items"><a class="btn" href="#home__introGod">神佛介紹</a></li>
-            <li class="nav__items"><a class="btn border-0" href="#home__contact">聯絡我們</a></li>
+            <li class="nav__items"><a class="btn" href="#home__openTime">交通資訊</a></li>
+            <li class="nav__items"><a class="btn" href="#home__openTime">開放時間</a></li>
           </ul>
         </div>
       </div>
@@ -63,8 +64,8 @@
 
   <footer class="footer ">
     <div class="d-flex flex-wrap">
-      <div class="footer__logoBox py-10 d-flex flex-column align-items-center bg-primary">
-        <a href="#" class="mb-6"><img src="assets/img/Logo-color.svg" alt="金剛宮footer__logo"></a>
+      <div data-aos="fade-up" class="footer__logoBox py-md-10 py-8 d-flex flex-column align-items-center bg-primary">
+        <a href="#" class="mb-6"><img src="assets/img/Logo-white.svg" alt="金剛宮footer__logo"></a>
         <p class="section__txt mb-6 ">石門金剛宮</p>
         <p class="copy-right">&copy;金剛宮 All Rights Reserved</p>
       </div>
@@ -76,6 +77,7 @@
   <script src="./assets/js/all.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
 
 </html>

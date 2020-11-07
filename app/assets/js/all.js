@@ -17,5 +17,6 @@ $(document).ready(() => {
       $('.header').removeClass('stickey');
     }
   });
-
+  //aos套件
+  AOS.init();
 });
