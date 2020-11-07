@@ -17,7 +17,7 @@
         margin: 0 50px;
         height: 100vh;
         @media (max-width: 767px) { 
-            height: 90vh;
+            height: 60vh;
          }
     }
     .home__banner__arrow{
@@ -492,7 +492,7 @@
             right: 0;
             left: 0;
             bottom: 0;
-            }
+        }
     }
     @media (max-width: 767px) {
         height: 240px;
@@ -504,7 +504,7 @@
 .home__contact{   
         margin-bottom: 160px;
         .ticket::before{
-        top:48%;
+            top:48%;
         }
         input,textarea{
             border: 1px solid $gray-300;
