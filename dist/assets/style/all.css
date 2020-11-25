@@ -14637,6 +14637,11 @@ p {
   border-bottom: 2px solid #480C12;
 }
 
+.header__nav .nav__items .btn:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 .header__nav--sm {
   padding-top: 24px;
 }
@@ -14762,18 +14767,10 @@ p {
   height: 80%;
 }
 
-.home__banner .banner {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../img/banner-bg1.jpg);
-  background-image: -o-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/banner-bg1.jpg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/banner-bg1.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
 .home__banner__box {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../img/banner-bg1.jpg);
-  background-image: -o-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/banner-bg1.jpg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/banner-bg1.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../img/mainGod.JPG);
+  background-image: -o-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/mainGod.JPG);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/mainGod.JPG);
   background-size: cover;
   background-repeat: no-repeat;
   margin: 0 50px;

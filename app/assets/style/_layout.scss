@@ -29,6 +29,9 @@
         .btn:hover{
             border-bottom: 2px solid $primary;
         }
+        .btn:focus{
+            box-shadow:none;   // 去掉bs4預設陰影
+        }
     }
 }
 .header__nav--sm{

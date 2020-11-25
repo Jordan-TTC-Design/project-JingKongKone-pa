@@ -36,8 +36,10 @@ $(document).ready(function () {
     }, 800);
   });
   $(".header__nav--sm li a,.this").click(function (event) {
-    $(".navbar-collapse").removeClass('show'); //collapse is not a function
-    // $('.collapse').collapse('hide');
+    $(".header__nav--sm").slideToggle(300); // $(".navbar-collapse").removeClass('show');
+  });
+  $(".header__nav--hamburger").click(function (event) {
+    $(".header__nav--sm").slideToggle(300);
   });
 });
 //# sourceMappingURL=all.js.map
