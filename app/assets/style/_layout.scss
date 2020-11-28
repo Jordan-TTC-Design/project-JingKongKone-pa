@@ -8,7 +8,6 @@
     width: 100%;
     top: 0;
     transition: all 0.2s ease;
-
 }
 
 .header__logo{
@@ -67,7 +66,10 @@
             width: 40px;
         } 
     }
-    .header__nav--sm{margin: 0;}
+    .header__nav--sm{
+        display: none;
+        margin: 0;
+    }
 }
 //header fixed
 .header.stickey{
@@ -121,4 +123,16 @@
     .footer__logoBox{
         width: 100%;
     }
+}
+
+//body
+.pageBg{
+    background-image: url(../img/Flower-bg.png);
+    opacity: .1;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
 }

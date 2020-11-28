@@ -6,7 +6,8 @@
         height: 80%;
     }
     &__box{
-        background-image:  linear-gradient(rgba(0, 0, 0, 0.5),rgba(0,0,0,0.5)),url(../img/mainGod.JPG);
+        // background-image:  linear-gradient(rgba(0, 0, 0, 0.5),rgba(0,0,0,0.5)),url(../img/mainGod.JPG);
+        background-image:  url(../img/mainGod.JPG);
         background-size: cover;
         background-repeat: no-repeat;
         margin: 0 50px;
@@ -68,16 +69,22 @@
         bottom: -40px;
     }
     .report__video__txtbox{
-        height: 100%;
-        padding: 0 24px;
+        padding:24px;
         background-color: $white;
+        // border:1px solid $light-gray;
         border-radius: 8px;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        align-items: flex-end;
+        position: absolute;
+        bottom: 24px;
+        right: 24px;
+        left: -48px;
         .txtbox__title{
+            font-size: 24px;
             font-weight: bold;
+            align-self: start;
         }
     }
     .youtube{
@@ -211,6 +218,7 @@
         .news__items{
             width: 100%;
             background-color: white;
+            margin-bottom: 24px;
             p{
                 margin-bottom: 0;
             }
@@ -245,11 +253,23 @@
         }
     }
     .section__contentBox{
-        padding: 96px 48px;
+        padding: 64px 48px;
         background-image: url(../img/paper-gray.jpg);
         border-radius: 8px;
+        @media (max-width: 1200px) {
+            padding: 32px 160px 32px 32px;
+            }
+        @media (max-width: 992px) {
+                padding: 48px;
+            }
         .list__items{
             display: flex;
+            .subTxt{
+                position: relative;
+                border-left: 1px solid $dark;
+                padding-left: 12px;
+                margin-left: 12px;
+            }
         }
         .list__items__title{
             font-weight: bold;
@@ -260,23 +280,23 @@
         position: absolute;
         top: 108px;
         right: 0;
-        
     }
     .home__googleMap{
         border-radius: 8px;
         width: 100%;
         height: 360px;
     }
-    
+    @media (max-width:992px){
+        .home__googleMapBox{
+            position: relative;
+            height: 360px;
+        top: 32px;
+        }
+    }
     @media (max-width: 767px) {
         .section__contentBox{
             padding: 36px 16px;
             margin-bottom: 24px;
-        }
-        .home__googleMapBox{
-            position: relative;
-            top: 0px;
-            height: 360px;
         }
         .section__pic{
                 width: 100%;
@@ -287,6 +307,12 @@
 //首頁神佛介紹
 .home__introGod{
     margin-bottom: 136px;
+    @media (max-width: 992px) {
+        margin-bottom: 240px;
+    }
+    @media (max-width: 767px) {
+        margin-bottom: 136px;
+    }
 }
 .home__introGod__txtBox{
     position: absolute;
@@ -330,7 +356,7 @@
         z-index: -1;
         right:0;
         border-radius: 8px 0px 0px 8px;
-        @media (max-width: 776px) {
+        @media (max-width: 767px) {
             width: 80%;
             // right:50%;
             // transform: translateX(50%);
@@ -474,8 +500,13 @@
     }
 }
 .sectionConcept{
+    .sction--bg{
+        width: 100%;
+        height: 100%;
+        background:url(../img/bg-line.png);
+    }
     height: 320px;
-    background:url(../img/bg-line.png);
+    background-color: #fff;
     .section__subTitle{
         position: relative;
         color:#CCCCCC;
@@ -497,7 +528,7 @@
     }
 }
 .home__contact{   
-        margin-bottom: 160px;
+       padding-bottom: 160px;
         .ticket::before{
             top:48%;
         }

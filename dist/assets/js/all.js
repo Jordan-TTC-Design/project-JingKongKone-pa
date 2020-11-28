@@ -19,7 +19,13 @@ $(document).ready(function () {
     }
   }); //aos套件
 
-  AOS.init(); //menu 移動
+  AOS.init({
+    once: true
+  }); // $(window).resize(function () {
+  //   var wdth = $(window).width(996);
+  //   $(".header__nav--sm").slideUp(3000);
+  // });
+  //menu 移動
   //主要的
 
   $(".header__nav li a,.this").click(function (event) {

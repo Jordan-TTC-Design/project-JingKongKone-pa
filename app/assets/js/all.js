@@ -18,7 +18,14 @@ $(document).ready(() => {
     }
   });
   //aos套件
-  AOS.init();
+  AOS.init({
+    once: true,
+  });
+
+  // $(window).resize(function () {
+  //   var wdth = $(window).width(996);
+  //   $(".header__nav--sm").slideUp(3000);
+  // });
 
   //menu 移動
   //主要的

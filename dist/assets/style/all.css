@@ -14407,6 +14407,7 @@ p {
   font-size: 16px;
   border: 1px solid #dee2e6;
   color: #343a40;
+  background-color: #fff;
 }
 
 .section__btn:hover {
@@ -14685,6 +14686,7 @@ p {
     width: 40px;
   }
   .header__nav--sm {
+    display: none;
     margin: 0;
   }
 }
@@ -14758,6 +14760,17 @@ p {
   }
 }
 
+.pageBg {
+  background-image: url(../img/Flower-bg.png);
+  opacity: .1;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+
 .home__banner {
   padding-top: 200px;
 }
@@ -14768,9 +14781,7 @@ p {
 }
 
 .home__banner__box {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../img/mainGod.JPG);
-  background-image: -o-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/mainGod.JPG);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/mainGod.JPG);
+  background-image: url(../img/mainGod.JPG);
   background-size: cover;
   background-repeat: no-repeat;
   margin: 0 50px;
@@ -14851,8 +14862,7 @@ p {
 }
 
 .home__report .report__video__txtbox {
-  height: 100%;
-  padding: 0 24px;
+  padding: 24px;
   background-color: #fff;
   border-radius: 8px;
   display: -webkit-box;
@@ -14865,13 +14875,20 @@ p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  position: absolute;
+  bottom: 24px;
+  right: 24px;
+  left: -48px;
 }
 
 .home__report .report__video__txtbox .txtbox__title {
+  font-size: 24px;
   font-weight: bold;
+  -ms-flex-item-align: start;
+      align-self: start;
 }
 
 .home__report .youtube {
@@ -15038,6 +15055,7 @@ p {
 .home__news .newsList .news__items {
   width: 100%;
   background-color: white;
+  margin-bottom: 24px;
 }
 
 .home__news .newsList .news__items p {
@@ -15080,15 +15098,34 @@ p {
 }
 
 .home__openTime .section__contentBox {
-  padding: 96px 48px;
+  padding: 64px 48px;
   background-image: url(../img/paper-gray.jpg);
   border-radius: 8px;
+}
+
+@media (max-width: 1200px) {
+  .home__openTime .section__contentBox {
+    padding: 32px 160px 32px 32px;
+  }
+}
+
+@media (max-width: 992px) {
+  .home__openTime .section__contentBox {
+    padding: 48px;
+  }
 }
 
 .home__openTime .section__contentBox .list__items {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.home__openTime .section__contentBox .list__items .subTxt {
+  position: relative;
+  border-left: 1px solid #343a40;
+  padding-left: 12px;
+  margin-left: 12px;
 }
 
 .home__openTime .section__contentBox .list__items__title {
@@ -15108,15 +15145,18 @@ p {
   height: 360px;
 }
 
+@media (max-width: 992px) {
+  .home__openTime .home__googleMapBox {
+    position: relative;
+    height: 360px;
+    top: 32px;
+  }
+}
+
 @media (max-width: 767px) {
   .home__openTime .section__contentBox {
     padding: 36px 16px;
     margin-bottom: 24px;
-  }
-  .home__openTime .home__googleMapBox {
-    position: relative;
-    top: 0px;
-    height: 360px;
   }
   .home__openTime .section__pic {
     width: 100%;
@@ -15126,6 +15166,18 @@ p {
 
 .home__introGod {
   margin-bottom: 136px;
+}
+
+@media (max-width: 992px) {
+  .home__introGod {
+    margin-bottom: 240px;
+  }
+}
+
+@media (max-width: 767px) {
+  .home__introGod {
+    margin-bottom: 136px;
+  }
 }
 
 .home__introGod__txtBox {
@@ -15182,7 +15234,7 @@ p {
   border-radius: 8px 0px 0px 8px;
 }
 
-@media (max-width: 776px) {
+@media (max-width: 767px) {
   .home__introGod .section__bg {
     width: 80%;
   }
@@ -15378,6 +15430,12 @@ p {
 
 .sectionConcept {
   height: 320px;
+  background-color: #fff;
+}
+
+.sectionConcept .sction--bg {
+  width: 100%;
+  height: 100%;
   background: url(../img/bg-line.png);
 }
 
@@ -15406,7 +15464,7 @@ p {
 }
 
 .home__contact {
-  margin-bottom: 160px;
+  padding-bottom: 160px;
 }
 
 .home__contact .ticket::before {
