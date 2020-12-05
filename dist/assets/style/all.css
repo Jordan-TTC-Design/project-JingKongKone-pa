@@ -14333,7 +14333,6 @@ body {
 }
 
 body {
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   color: #000;
   margin: 0;
   padding: 0;
@@ -14346,7 +14345,7 @@ body {
 
 .swiper-slide {
   text-align: center;
-  font-size: 18px;
+  font-size: 12px;
   background: #fff;
   /* Center slide text vertically */
   display: -webkit-box;
@@ -14740,7 +14739,7 @@ p {
 
 .pageBg {
   background-image: url(../img/flowerBG.jpg);
-  opacity: .3;
+  opacity: .75;
   position: fixed;
   top: 0;
   bottom: 0;
@@ -14839,8 +14838,37 @@ p {
   bottom: -40px;
 }
 
-.home__report .report__video__txtbox {
+.home__report .videoRow {
+  position: relative;
   padding: 24px;
+}
+
+.home__report .videoRow .video-button-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.home__report .videoRow .video-button {
+  height: 44px;
+  width: 44px;
+  background-size: contain;
+  z-index: 99;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  border: 1px solid #dee2e6;
+}
+
+.home__report .report__video__txtbox {
+  padding: 24px 24px 24px 24px;
   background-color: #fff;
   border-radius: 8px;
   display: -webkit-box;
@@ -14850,23 +14878,22 @@ p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
   position: absolute;
-  bottom: 24px;
+  bottom: 0;
   right: 24px;
   left: -48px;
+  min-height: 180px;
 }
 
 .home__report .report__video__txtbox .txtbox__title {
   font-size: 24px;
   font-weight: bold;
-  -ms-flex-item-align: start;
-      align-self: start;
 }
 
 .home__report .youtube {
@@ -14876,13 +14903,14 @@ p {
 }
 
 .home__report .section__bgCover {
-  height: 180px;
+  height: 200px;
   width: 80px;
   border-radius: 8px 0px 0px 0px;
   background-color: #fff;
   position: absolute;
   bottom: 0;
   right: 0;
+  z-index: 98;
 }
 
 .home__report .section__bgCover__coner {
@@ -14900,7 +14928,7 @@ p {
 }
 
 .home__report .bgCover__coner--2 {
-  bottom: 6px;
+  bottom: 0;
   left: -8px;
 }
 
@@ -14908,9 +14936,13 @@ p {
   .home__report .report__video__txtbox {
     position: relative;
     left: 0;
-    padding: 16px 0px 0px 0px;
+    padding: 24px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    min-height: 120px;
   }
-  .home__report .section__title, .home__report .section__subTxt {
+  .home__report .section__title {
     text-align: center;
   }
   .home__report .youtube {

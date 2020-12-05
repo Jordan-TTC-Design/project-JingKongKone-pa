@@ -68,23 +68,41 @@
         position: absolute;
         bottom: -40px;
     }
-    .report__video__txtbox{
+    .videoRow{
+        position: relative;
         padding:24px;
+        .video-button-container{
+            display: flex;
+        }
+        .video-button{
+            height: 44px;
+            width: 44px;
+           background-size: contain;
+           z-index: 99;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           border-radius: 50%;
+           border: 1px solid $gray-300;
+        }
+    }
+    .report__video__txtbox{
+        padding:24px 24px 24px 24px;
         background-color: $white;
         // border:1px solid $light-gray;
         border-radius: 8px;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-between;
         align-items: flex-end;
         position: absolute;
-        bottom: 24px;
+        bottom: 0;
         right: 24px;
         left: -48px;
+        min-height: 180px;
         .txtbox__title{
             font-size: 24px;
             font-weight: bold;
-            align-self: start;
         }
     }
     .youtube{
@@ -93,13 +111,14 @@
         border-radius: 8px;
     }
     .section__bgCover{
-        height: 180px;
+        height: 200px;
         width: 80px;
         border-radius: 8px 0px 0px 0px;
         background-color: $white;
         position: absolute;
         bottom: 0;
         right: 0;
+        z-index: 98;
     }
     .section__bgCover__coner{
         position: absolute;
@@ -115,16 +134,19 @@
         right: 15px;
     }
     .bgCover__coner--2{
-        bottom:6px;
+        bottom:0;
         left:-8px;
     }
     @media (max-width: 767px) {
+        
         .report__video__txtbox{
         position: relative;
         left: 0;
-        padding: 16px 0px 0px 0px;
+        padding: 24px;
+        align-items: center;
+        min-height: 120px;
     }
-    .section__title,.section__subTxt{
+    .section__title{
         text-align: center;
     }
     .youtube{

@@ -1,15 +1,26 @@
 $(document).ready(() => {
   // console.log('Hello Bootstrap4');
-  var swiper = new Swiper('.swiper-container', {
+  var swiperGod = new Swiper('.home__introGod__godListBox .swiper-container', {
     slidesPerView: 2,
     spaceBetween: 30,
     // centeredSlides: true,
     pagination: {
-      el: '.swiper-pagination',
+      el: '.swiper-pagination1',
       clickable: true,
     },
-  });
 
+  });
+  var swiperVideo = new Swiper('.videoContainer--swiper .swiper-container', {
+    pagination: {
+      el: '.swiper-pagination2',
+      type: 'fraction',
+    },
+    navigation: {
+      nextEl: '.video-button-next',
+      prevEl: '.video-button-prev',
+    },
+    loop: true,
+  });
   $(window).scroll(function () {
     if ($(window).scrollTop() > 200) {
       $('.header').addClass('stickey');
