@@ -14867,6 +14867,19 @@ p {
   border: 1px solid #dee2e6;
 }
 
+.home__report .videoRow .swiper-slide {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .home__report .report__video__txtbox {
   padding: 24px 24px 24px 24px;
   background-color: #fff;
@@ -14886,31 +14899,31 @@ p {
           align-items: flex-end;
   position: absolute;
   bottom: 0;
-  right: 24px;
-  left: -48px;
-  min-height: 180px;
-}
-
-.home__report .report__video__txtbox .txtbox__title {
-  font-size: 24px;
-  font-weight: bold;
+  right: 0;
 }
 
 .home__report .youtube {
-  width: 100%;
+  width: 80%;
   height: 360px;
   border-radius: 8px;
 }
 
 .home__report .section__bgCover {
   height: 200px;
-  width: 80px;
+  width: 320px;
   border-radius: 8px 0px 0px 0px;
   background-color: #fff;
   position: absolute;
   bottom: 0;
   right: 0;
   z-index: 98;
+  padding: 24px;
+}
+
+.home__report .section__bgCover .title {
+  text-align: left;
+  font-size: 24px;
+  font-weight: bold;
 }
 
 .home__report .section__bgCover__coner {
@@ -14924,7 +14937,7 @@ p {
 
 .home__report .bgCover__coner--1 {
   top: -8px;
-  right: 15px;
+  left: 94px;
 }
 
 .home__report .bgCover__coner--2 {
@@ -14933,6 +14946,12 @@ p {
 }
 
 @media (max-width: 767px) {
+  .home__report .swiper-slide {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
   .home__report .report__video__txtbox {
     position: relative;
     left: 0;
@@ -14946,8 +14965,18 @@ p {
     text-align: center;
   }
   .home__report .youtube {
+    width: 100%;
     height: 240px;
     margin-bottom: 24px;
+  }
+  .home__report .section__bgCover {
+    height: auto;
+    width: 100%;
+    padding: 24px 0 0 0;
+    position: relative;
+  }
+  .home__report .section__bgCover .title {
+    text-align: center;
   }
 }
 
