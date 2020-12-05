@@ -14491,7 +14491,7 @@ p {
 .ticket {
   height: 480px;
   position: relative;
-  width: 160px;
+  width: 180px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -14558,31 +14558,9 @@ p {
   margin: 0 auto;
 }
 
-.ticket::before {
-  content: '';
-  width: 120px;
-  height: 320px;
-  background-image: url(../img/flower-red.svg);
-  position: absolute;
-  top: -12%;
-  right: -16%;
-  z-index: -1;
-}
-
 @media (max-width: 992px) {
   .ticket {
     margin: 4px;
-  }
-}
-
-@media (max-width: 767px) {
-  .ticket {
-    height: 400px;
-  }
-  .ticket::before {
-    width: 80px;
-    right: -16%;
-    top: -6%;
   }
 }
 
@@ -14761,8 +14739,8 @@ p {
 }
 
 .pageBg {
-  background-image: url(../img/Flower-bg.png);
-  opacity: .1;
+  background-image: url(../img/flowerBG.jpg);
+  opacity: .3;
   position: fixed;
   top: 0;
   bottom: 0;

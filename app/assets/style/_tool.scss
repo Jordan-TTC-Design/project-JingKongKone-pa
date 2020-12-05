@@ -56,7 +56,7 @@ background-repeat: repeat-x;
 .ticket{
     height: 480px;
     position: relative;
-    width: 160px;
+    width: 180px;
     display: flex;
     flex-direction: column;
     background-color: #fff;
@@ -106,31 +106,31 @@ background-repeat: repeat-x;
 }
 
 
-.ticket::before{
-content:'';
-width: 120px;
-height: 320px;
-background-image: url(../img/flower-red.svg);
-position: absolute;
-top: -12%;
-right: -16%;
-z-index: -1;
-}
+// .ticket::before{
+// content:'';
+// width: 120px;
+// height: 320px;
+// background-image: url(../img/flower-red.svg);
+// position: absolute;
+// top: -12%;
+// right: -16%;
+// z-index: -1;
+// }
 @media (max-width: 992px) {
     .ticket{
         margin: 4px;
     }
 }
-@media (max-width: 767px) {
-    .ticket{
-        height: 400px;
-    }
-    .ticket::before{
-        width: 80px;
-        right: -16%;
-        top: -6%;
-    }
-}
+// @media (max-width: 767px) {
+//     .ticket{
+//         height: 480px;
+//     }
+//     .ticket::before{
+//         width: 80px;
+//         right: -16%;
+//         top: -6%;
+//     }
+// }
 //youtube
 .video-container {
     position: relative;
