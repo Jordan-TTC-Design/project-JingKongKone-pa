@@ -14739,7 +14739,7 @@ p {
 
 .pageBg {
   background-image: url(../img/flowerBG.jpg);
-  opacity: .75;
+  opacity: .3;
   position: fixed;
   top: 0;
   bottom: 0;
