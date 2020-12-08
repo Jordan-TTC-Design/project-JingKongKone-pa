@@ -110,7 +110,7 @@
     }
     .youtube{
         width:80%;
-        height: 360px;
+        height: 480px;
         border-radius: 8px;
     }
     .section__bgCover{
@@ -141,10 +141,17 @@
     .bgCover__coner--1{
         top:-8px;
         left: 94px;
+        @media (max-width: 1200px) {
+        left: 130px;
+        }
+        @media (max-width: 996px) {
+            left: 178px;
+            }
     }
     .bgCover__coner--2{
         bottom:0;
         left:-8px;
+        
     }
     @media (max-width: 767px) {
         .swiper-slide{

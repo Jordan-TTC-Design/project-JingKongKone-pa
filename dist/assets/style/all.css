@@ -14904,7 +14904,7 @@ p {
 
 .home__report .youtube {
   width: 80%;
-  height: 360px;
+  height: 480px;
   border-radius: 8px;
 }
 
@@ -14938,6 +14938,18 @@ p {
 .home__report .bgCover__coner--1 {
   top: -8px;
   left: 94px;
+}
+
+@media (max-width: 1200px) {
+  .home__report .bgCover__coner--1 {
+    left: 130px;
+  }
+}
+
+@media (max-width: 996px) {
+  .home__report .bgCover__coner--1 {
+    left: 178px;
+  }
 }
 
 .home__report .bgCover__coner--2 {
